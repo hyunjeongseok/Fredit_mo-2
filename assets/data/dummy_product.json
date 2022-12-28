@@ -1,0 +1,148 @@
+{
+    "items":[
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-01.jpg"
+            },
+            "title":"야쿠르트 ver.1971",
+
+            "price":{
+                "ori":50000,
+                "curr":23000,
+                "discount":33
+            },
+            "member":true
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-02.jpg"
+            },
+            "title":"하루만낫또 2입",
+
+            "price":{
+                "ori":2900,
+                "curr":2900
+            },
+            "member":true
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-03.jpg"
+            },
+            "title":"잇츠온 하루두부",
+
+            "price":{
+                "ori":1500,
+                "curr":1500
+            },
+            "member":true
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-04.jpg"
+            },
+            "title":"썬키스트 비타엔젤 오렌지 2+1",
+
+            "price":{
+                "ori":6000,
+                "curr":1500
+            },
+            "member":true
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-05.jpg"
+            },
+            "title":"프로닉 플레인",
+
+            "price":{
+                "ori":800,
+                "curr":800
+            },
+            "member":false
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-06.jpg"
+            },
+            "title":"편스토랑 마라닭구이",
+
+            "price":{
+                "ori":16300,
+                "curr":16300
+            },
+            "member":false
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-07.jpg"
+            },
+            "title":"메치니코프 플레인사과",
+
+            "price":{
+                "ori":1400,
+                "curr":1400
+            },
+            "member":false
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-08.jpg"
+            },
+            "title":"시그니처치킨텐더 랩샌드위치",
+
+            "price":{
+                "ori":6200,
+                "curr":6200
+            },
+            "member":false
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-09.jpg"
+            },
+            "title":"내추럴플랜 검은콩(300ml)",
+
+            "price":{
+                "ori":1600,
+                "curr":1600
+            },
+            "member":false
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-10.jpg"
+            },
+            "title":"메치니코프 플레인사과",
+
+            "price":{
+                "ori":1400,
+                "curr":1400
+            },
+            "member":false
+        },
+        {
+            "prdId":0,
+            "thumnails":{
+                    "url":"./assets/images/group-pro1-11.jpg"
+            },
+            "title":"햄에그샐러드 샌드위치(1개입)",
+
+            "price":{
+                "ori":5600,
+                "curr":5040
+            },
+            "member":true
+        }
+    ]
+}

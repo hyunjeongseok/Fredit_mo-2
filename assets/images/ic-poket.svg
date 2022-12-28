@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#1d1d1d;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}.cls-3{fill:#1d1d1d}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(6.063 12.703)">
+        <path id="영역" transform="translate(-6.063 -12.703)" style="fill:none" d="M0 0h64v64H0z"/>
+        <path id="패스_2180" data-name="패스 2180" class="cls-2" d="M551.838 172.837h-28.25L521 151.75h33.857z" transform="translate(-512.222 -145.898)"/>
+        <path id="패스_2181" data-name="패스 2181" class="cls-2" d="m522.548 164.362 1.174 6.709h27.169" transform="translate(-511.182 -137.423)"/>
+        <path id="패스_2182" data-name="패스 2182" class="cls-2" d="m524.528 154.1-3.762-5.852h-5.016" transform="translate(-515.75 -148.25)"/>
+        <circle id="타원_98" data-name="타원 98" class="cls-3" cx="2.717" cy="2.717" r="2.717" transform="translate(33.648 37.828)"/>
+        <circle id="타원_99" data-name="타원 99" class="cls-3" cx="2.717" cy="2.717" r="2.717" transform="translate(13.794 37.828)"/>
+    </g>
+</svg>

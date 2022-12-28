@@ -1,0 +1,17 @@
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin multi-ellip($line,$lineheight) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: $lineheight;
+    max-height: $lineheight*$line;
+    display: -webkit-box;
+    -webkit-line-clamp: $line; 
+    -webkit-box-orient: vertical;
+}
+
+
