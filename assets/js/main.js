@@ -1,5 +1,4 @@
 $(function(){
-
   function num(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
@@ -17,7 +16,10 @@ $(function(){
   
 
   /**
-   * group-product 상품 
+   * @groupproduct상품데이터
+   * fetch()
+   * json
+   * forEach
    */
   fetch('../assets/data/dummy_product.json')
   .then((response) => response.json())
@@ -69,13 +71,30 @@ $(function(){
   })
 
 
+    /**
+     * @이벤트상세보기click
+     * click()
+     */
+    $('.sc-visual .swiper-pagination').click(function(e){
+      e.preventDefault();
+      
+      $('.sc-event').addClass('on');
+    })
+    $('.sc-event .btn-close').click(function(e){
+      e.preventDefault();
+
+      $('.sc-event').removeClass('on');
+
+    })
+    
 
 
 
     /**
+     * @비주얼슬라이드
      * swiper
-     * sc-visual
-     * sc-event
+     * autoplay:delay -> 설정한 시간만큼 정지 후 재생(1초 1000)
+     * speed -> 재생속도
      */
      let visual = new Swiper(".visual", {
         autoplay:{
@@ -91,16 +110,12 @@ $(function(){
       });
 
 
-      $('.sc-visual .swiper-pagination').click(function(){
-        $('.sc-event').toggleClass('on');
-      })
-      $('.sc-event .btn-close').click(function(){
-        $('.sc-event').removeClass('on').slideDown();
-      })
-
+      
       /**
+       * @상품슬라이드
        * swiper
-       * group-product
+       * slidePerView:auto -> 정해진범위없이 자유롭게 넘기기
+       * spaceBetween -> 요소 간의 간격 조정
        */
       let product = new Swiper(".product", {
         
@@ -115,8 +130,10 @@ $(function(){
       });
 
       /**
-       * swiper
-       * sc-time 타임세일
+       * @추천상품페이지네이션
+       * swiper-pagination
+       * el -> 페이지 태그 클래스 설정
+       * type -> 페이지 타입 설정(bullets,fraction,progressbar)
        */
        let time = new Swiper(".time", {
         slidesPerView: 1.3,
@@ -127,11 +144,6 @@ $(function(){
         },
       });
 
-
-      /**
-       * swiper
-       * group-recomm
-       */
       let recomm = new Swiper(".recomm", {
         spaceBetween: 20,
         
@@ -143,9 +155,12 @@ $(function(){
 
 
       /**
+       * @카테고리슬라이드
        * swiper
-       * catemenu
-       * categoods
+       * slidePerView:auto -> 정해진범위없이 자유롭게 넘기기
+       * autoHeight -> 자동 높이 조절
+       * controller -> 컨트롤러 서로 연결
+       * slideTo -> 특정슬라이드로 이동
        */
        let catemenu = new Swiper(".catemenu", {
         slidesPerView: "auto",
@@ -173,7 +188,9 @@ $(function(){
 
 
       /**
-       * 상단 스크롤 이동
+       * @상단스크롤이동
+       * scroll()
+       * scrollTop
        */
        $(window).scroll(function(){
             
@@ -192,10 +209,12 @@ $(function(){
 
 
       /**
-       * 타임특가
+       * @타임특가시간
+       * diffDay -> 디데이설정
+       * Math.floor -> 소수점 반올림
        */
       function diffDay() {
-        const endTime = new Date("2022-12-25");
+        const endTime = new Date("2023-12-25");
         const todayTime = new Date();
         const diff = endTime - todayTime;
 
@@ -220,7 +239,10 @@ $(function(){
 
 
     /**
-     * 인스타그램 링크 연결
+     * @인스타그램링크연결
+     * fetch()
+     * json
+     * forEach()
      */
     fetch('../assets/data/dummy_insta.json')
     .then((response) => response.json())
