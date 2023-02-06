@@ -21,7 +21,7 @@ $(function(){
    * json
    * forEach
    */
-  fetch('../assets/data/dummy_product.json')
+  fetch('https://hyunjeongseok.github.io/work6-Fredit/assets/data/dummy_product.json')
   .then((response) => response.json())
   .then((json) => {
     data = json.items;
@@ -244,7 +244,7 @@ $(function(){
      * json
      * forEach()
      */
-    fetch('../assets/data/dummy_insta.json')
+    fetch('https://hyunjeongseok.github.io/work6-Fredit/assets/data/dummy_insta.json')
     .then((response) => response.json())
     .then((json) => {
       data=json.items;
