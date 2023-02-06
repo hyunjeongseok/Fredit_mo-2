@@ -549,6 +549,10 @@ section .member .price {
   display: block;
   padding: 10px;
 }
+.group-product .info-box .brand {
+  font-weight: 700;
+  font-size: 11px;
+}
 .group-product .info-box p {
   font-size: 12px;
   line-height: 18px;

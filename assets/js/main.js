@@ -135,7 +135,7 @@ $(function(){
        * el -> 페이지 태그 클래스 설정
        * type -> 페이지 타입 설정(bullets,fraction,progressbar)
        */
-       let time = new Swiper(".time", {
+      let times = new Swiper(".timeslide", {
         slidesPerView: 1.3,
         
         pagination: {
@@ -144,9 +144,9 @@ $(function(){
         },
       });
 
-      let recomm = new Swiper(".recomm", {
+      
+      let recomm = new Swiper(".recommslide", {
         spaceBetween: 20,
-        
         pagination: {
           el: ".swiper-pagination",
           type: "fraction",
@@ -154,33 +154,33 @@ $(function(){
       });
 
 
-      /**
-       * @카테고리슬라이드
-       * swiper
-       * slidePerView:auto -> 정해진범위없이 자유롭게 넘기기
-       * autoHeight -> 자동 높이 조절
-       * controller -> 컨트롤러 서로 연결
-       * slideTo -> 특정슬라이드로 이동
-       */
-       let catemenu = new Swiper(".catemenu", {
-        slidesPerView: "auto",
-      });
-       let categoods = new Swiper(".categoods", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        autoHeight: true,
-      });
+    /**
+     * @카테고리슬라이드
+     * swiper
+     * slidePerView:auto -> 정해진범위없이 자유롭게 넘기기
+     * autoHeight -> 자동 높이 조절
+     * controller -> 컨트롤러 서로 연결
+     * slideTo -> 특정슬라이드로 이동
+     */
+    let catemenu = new Swiper(".catemenu", {
+      slidesPerView: "auto",
+    });
+    let categoods = new Swiper(".categoods", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoHeight: true,
+    });
 
-      catemenu.controller.control = categoods;
-      categoods.controller.control = catemenu;
+    catemenu.controller.control = categoods;
+    categoods.controller.control = catemenu;
 
-      $('.sc-cate .catemenu li').click(function (e) { 
-        e.preventDefault();
-        idx = $(this).index();
+    $('.sc-cate .catemenu li').click(function (e) { 
+      e.preventDefault();
+      idx = $(this).index();
 
-        catemenu.slideTo(idx);
-        categoods.slideTo(idx);
-      });
+      catemenu.slideTo(idx);
+      categoods.slideTo(idx);
+    });
 
 
 

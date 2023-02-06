@@ -253,6 +253,10 @@ section{
     .info-box{
         display: block;
         padding: 10px;
+        .brand{
+            font-weight: 700;
+            font-size: 11px;
+        }
         p{
             font-size: 12px;
             line-height: 18px;
